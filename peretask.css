@@ -1,0 +1,36 @@
+body {
+    background-color: #a6caf0;
+}
+.container {
+    margin: 20px auto; padding: 0 auto;
+    width: 450px;
+}
+.zoo {
+    display: grid;  
+    grid-template-rows:  120px 120px;
+    grid-template-columns: 110px 110px 110px 110px; /* 3 столбца */
+  }
+.animal {
+    width: 90px; height: 90px;
+    background-color: tomato;
+}
+
+.cells{
+    margin-left: 40px;
+    display: grid;  
+    grid-template-rows:  120px 120px;
+    grid-template-columns: 120px 120px 120px; /* 3 столбца */
+  }
+.cell{
+    width: 100px; height: 100px;
+    background-color: rgb(202, 117, 219);
+}
+.zone-predator{
+    width: 100px; height: 100px;
+    background-color: rgb(117, 219, 160);
+}
+.text_content {
+    margin-left: 20px;
+    color: blue;
+    font-size: 20px;
+}
