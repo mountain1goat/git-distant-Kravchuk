@@ -3,9 +3,10 @@
         const blooks = document.querySelectorAll('.animal-img');
         const zones = document.querySelectorAll('.animal');
         const cells = document.querySelectorAll('.cell');
+        let text = document.getElementById('text_content');
 
         let dragItem = null;
-        
+        let count = cells.length;
 
         blooks.forEach(cell => {
                 cell.addEventListener('dragstart', dragstart);
@@ -46,6 +47,9 @@
                 e.target.append(dragItem);
                 if (dragItem.dataset.role == 'predator'){
                 e.target.classList.add('zone-predator');
+                if (document.querySelectorAll('.cell>img[data-role="predator"]').length === count){
+                text.textContent = "Молодец! Ты справился!"
+            }
             } 
             }
         }
