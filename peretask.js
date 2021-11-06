@@ -3,7 +3,7 @@
         const blooks = document.querySelectorAll('.animal-img');
         const zones = document.querySelectorAll('.animal');
         const cells = document.querySelectorAll('.cell');
-        let text = document.getElementById('text_content');
+        let text = document.querySelector('.text_content');
 
         let dragItem = null;
         let count = cells.length;
